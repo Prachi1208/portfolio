@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Ecommerce Website",
+    "imageSrc": "projects/ecom.png",
+    "description": "React ecommerce platform with essential commerce features.",
+    "skills": ["HTML/CSS", "React", "Redux"],
+    "demo": "https://ecom-djxe.vercel.app/",
+    "source": "https://github.com/Prachi1208/ecom"
+  },
+  {
+    "title": "Parallax website",
+    "imageSrc": "projects/parallax.png",
+    "description": "Parallax scrolling creates a visually captivating experience for users and adds a sense of depth and creativity.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://parallax-hill.vercel.app/",
+    "source": "https://github.com/Prachi1208/ParallaxHill"
+  },
+  {
+    "title": "Website for an architectural firm",
+    "imageSrc": "projects/archi.png",
+    "description": "Developed a professional website for an architectural firm, showcasing portfolio projects.",
+    "skills": ["HTML", "CSS", "React"]
+    
+  }
+]
