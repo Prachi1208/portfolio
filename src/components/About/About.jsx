@@ -38,10 +38,10 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>Machine Learning Enthusiast</h3>
+              <h3>Ethical Hacking Enthusiast</h3>
               <p>
               
-                Developed a cancer prediction model using XGBoost and achieving 85% accuracy on clinical dataset
+                Network Hacking Skills: Proficient in pre-connection attacks, packet sniffing, and cracking WEP, WPA, and WPA2 encryption. Experienced in using these techniques ethically to identify and secure network vulnerabilities.
 
               </p>
             </div>
