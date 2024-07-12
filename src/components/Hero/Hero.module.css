@@ -5,10 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  margin-top: 100px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .content {
@@ -17,10 +18,11 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
+  flex: 1 1 50%; /* Allows the content to resize */
 }
 
 .title {
-  font-size: 72px;
+  font-size: 3rem; /* Use relative units */
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
@@ -31,10 +33,11 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  text-align: left; /* Ensure text is left-aligned */
 }
 
 .description {
-  font-size: 30px;
+  font-size: 1.875rem; /* Use relative units */
   font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
@@ -44,20 +47,20 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 30px;
+  font-size: 1.875rem; /* Use relative units */
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .heroImg {
-  width: 50%;
+  width: 10%; /* Adjusted for smaller image */
   z-index: 1;
-
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  flex: 1 1 40%; /* Allows the image to resize */
 }
 
 @keyframes floating {
@@ -72,40 +75,82 @@
   }
 }
 
-.topBlur {
+.topBlur, .bottomBlur {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
 
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
+.topBlur {
+  width: 50vw;
   height: 50vw;
   min-width: 350px;
+  top: -128px;
+  left: -10vw;
+}
+
+.bottomBlur {
+  width: 70vw;
+  height: 50vw;
   min-width: 250px;
   top: 246px;
   right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 2.5rem; /* Adjust for smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .description {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .contactBtn {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .heroImg {
+    width: 50%; /* Make the image take 80% width on smaller screens */
+    margin-bottom: 20px; /* Add some space between image and content */
   }
 
   .content {
     align-items: center;
+    text-align: center; /* Center-align text */
+  }
+
+  .topBlur, .bottomBlur {
+    display: none; /* Hide blurs on smaller screens for better visibility */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Further adjust for very small screens */
+  }
+
+  .description {
+    font-size: 1.25rem; /* Further adjust for very small screens */
+  }
+
+  .contactBtn {
+    font-size: 1.25rem; /* Further adjust for very small screens */
+    padding: 10px 15px; /* Further adjust padding */
+  }
+
+  .heroImg {
+    width: 50%; /* Make the image take 70% width on very small screens */
   }
 }
