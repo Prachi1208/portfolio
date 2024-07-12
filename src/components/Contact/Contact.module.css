@@ -8,20 +8,22 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  padding: 4rem 10%;
+  gap: 1rem;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
+  text-align: center;
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  text-align: center;
 }
 
 .links {
@@ -29,27 +31,32 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  gap: 26px;
+  gap: 1.5rem;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 1.5rem;
+}
+
+.link img {
+  max-width: 2rem;
+  height: auto;
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.09375rem;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    gap: 1.5rem;
   }
 
   .text {
@@ -60,5 +67,39 @@
 
   .links {
     align-items: center;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .link a {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text h2 {
+    font-size: 2.5rem;
+  }
+
+  .text p {
+    font-size: 1.25rem;
+  }
+
+  .link img {
+    max-width: 1.5rem;
+  }
+
+  .link a {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 2rem 5%;
   }
 }
