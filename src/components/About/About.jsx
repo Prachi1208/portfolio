@@ -40,7 +40,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Ethical Hacking Enthusiast</h3>
               <p>
-              Network Hacking Skills: Proficient in pre-connection attacks, packet sniffing, and cracking WEP, WPA, and WPA2 encryption using Kali Linux. Experienced in employing these techniques ethically to identify and secure network vulnerabilities.Network Hacking Skills: Proficient in pre-connection attacks, packet sniffing, and cracking WEP, WPA, and WPA2 encryption. Experienced in using these techniques ethically to identify and secure network vulnerabilities.
+              Network Hacking Skills: Proficient in pre-connection attacks, packet sniffing, and cracking WEP, WPA, and WPA2 encryption using Kali Linux. Experienced in employing these techniques ethically to identify and secure network vulnerabilities.
 
               </p>
             </div>
