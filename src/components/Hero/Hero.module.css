@@ -144,7 +144,7 @@
   
 
 .heroImg {
-  min-width: 50%; /* Ensure both width and height are equal */
+  min-width: 60%; /* Ensure both width and height are equal */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
   border-radius: 50%; /* Makes the image circular */
@@ -182,7 +182,7 @@
   }
 
  .heroImg {
-  min-width: 80%; /* Ensure both width and height are equal */
+  min-width: 60%; /* Ensure both width and height are equal */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
   border-radius: 50%; /* Makes the image circular */
