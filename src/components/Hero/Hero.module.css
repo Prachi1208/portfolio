@@ -51,16 +51,25 @@
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
 }
 
+.contactBtn:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Adjust the glow color and intensity */
+  transform: scale(1.05); /* Optional: slightly enlarge button on hover */
+}
+
+
 .heroImg {
-  width: 10%; /* Adjusted for smaller image */
+  max-width: 30%; /* Adjusted for smaller image */
   z-index: 1;
+  border-radius: 100%; /* Makes the image circular */
+  border: 15px solid rgb(47, 65, 125); /* Adds a border for the frame */
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  flex: 1 1 40%; /* Allows the image to resize */
+  flex: 1 1 30%; /* Allows the image to resize */
 }
 
 @keyframes floating {
@@ -117,13 +126,27 @@
   }
 
   .contactBtn {
-    font-size: 1.5rem; /* Adjust for smaller screens */
-    padding: 12px 20px; /* Adjust padding for smaller screens */
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 100px;
+    font-size: 1.875rem; /* Use relative units */
+    font-weight: 600;
+    padding: 17px 26px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
   }
+  
+  .contactBtn:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Adjust the glow color and intensity */
+    transform: scale(1.05); /* Optional: slightly enlarge button on hover */
+  }
+  
 
   .heroImg {
-    width: 50%; /* Make the image take 80% width on smaller screens */
-    margin-bottom: 20px; /* Add some space between image and content */
+    width: 30%; /* Make the image smaller on smaller screens */
+    margin-bottom: 20px; 
+    border: 7px solid rgb(47, 65, 125); /* Adds a border for the frame *//* Add some space between image and content */
   }
 
   .content {
@@ -151,6 +174,7 @@
   }
 
   .heroImg {
-    width: 50%; /* Make the image take 70% width on very small screens */
+    width: 30%;
+     /* Make the image smaller on very small screens */
   }
 }
