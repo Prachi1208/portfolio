@@ -145,7 +145,7 @@
 
   .heroImg {
     min-width: 50%;
-    min-height: 50%; /* Make the image smaller on smaller screens */
+    max-height: 30%; /* Make the image smaller on smaller screens */
     margin-bottom: 20px; 
     border: 7px solid rgb(47, 65, 125); /* Adds a border for the frame *//* Add some space between image and content */
   }
@@ -176,7 +176,7 @@
 
   .heroImg {
     min-width: 50%;
-    min-height: 50%;
+    max-height: 30%;
      /* Make the image smaller on very small screens */
   }
 }
