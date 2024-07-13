@@ -148,7 +148,7 @@
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
   border-radius: 50%; /* Makes the image circular */
-  border: 15px solid rgb(47, 65, 125); /* Adds a border for the frame */
+  border: 10px solid rgb(47, 65, 125); /* Adds a border for the frame */
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -186,7 +186,7 @@
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
   border-radius: 50%; /* Makes the image circular */
-  border: 15px solid rgb(47, 65, 125); /* Adds a border for the frame */
+  border: 10px solid rgb(47, 65, 125); /* Adds a border for the frame */
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
