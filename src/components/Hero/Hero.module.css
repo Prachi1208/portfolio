@@ -61,7 +61,7 @@
 
 
 .heroImg {
-  max-width: 50%; /* Adjusted for smaller image */
+  max-width: 80%; /* Adjusted for smaller image */
   z-index: 1;
   border-radius: 100%; /* Makes the image circular */
   border: 15px solid rgb(47, 65, 125); /* Adds a border for the frame */
