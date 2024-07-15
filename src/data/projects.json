@@ -2,7 +2,7 @@
   {
     "title": "Ecommerce Website",
     "imageSrc": "projects/lapecom.png",
-    "description": "React ecommerce platform with essential commerce features.",
+    "description": "React ecommerce platform with essential commerce features.Implemented features like adding and removing from cart, login and register.",
     "skills": ["HTML/CSS", "React", "Redux"],
     "demo": "https://ecom-djxe.vercel.app/",
     
@@ -11,7 +11,7 @@
   {
     "title": "Parallax website",
     "imageSrc": "projects/lappara.png",
-    "description": "Parallax scrolling creates a visually captivating experience for users.",
+    "description": "Parallax scrolling creates a visually captivating experience for users.Created an interactive parallax scrolling website to enhance visual storytelling",
     "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://parallax-hill.vercel.app/",
     "source": "assets/projects/project3.html"
@@ -19,7 +19,7 @@
   {
     "title": "Website for an architectural firm",
     "imageSrc": "projects/laparchi.png",
-    "description": "Developed a professional website for an architectural firm.",
+    "description": "Developed a professional website for an architectural firm.showcasing portfolio projects with high-quality visuals and intuitive navigation.",
     "skills": ["HTML", "CSS", "React"],
     "source": "assets/projects/project3.html"
     
