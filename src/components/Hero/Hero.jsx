@@ -9,20 +9,19 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Prachi</h1>
         <p className={styles.description}>
-          I'm a frontend developer with 2 years of experience using React and
-          NextJS. Reach out if you'd like to learn more!
+          I'm a frontend developer with 2 years of experience using React and NextJS. Reach out if you'd like to learn more!
         </p>
         <a href="mailto:prachinanjannavar@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
       <img
-        src={getImageUrl("hero/b.png")}
+        src={getImageUrl("hero/prachi.png")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
+      {/* <div className={styles.topBlur} /> */}
+      {/* <div className={styles.bottomBlur} /> */}
     </section>
   );
 };
