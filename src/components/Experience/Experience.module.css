@@ -8,14 +8,18 @@
 }
 
 .title {
-  color: var(--color-text);
+  color: rgb(255, 255, 255);
   font-size: 35px;
   font-weight: 700;
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 80px;
   letter-spacing: 1.75px;
   text-transform: uppercase;
 }
 
 .content {
+  color: rgb(83, 209, 212);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -23,13 +27,14 @@
 }
 
 .skills {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
 }
 
 .skill {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +42,7 @@
 }
 
 .skillImageContainer {
-  background-color: var(--color-secondary);
+  background-color: rgb(24, 55, 86);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -51,7 +56,7 @@
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 20px;
   font-family: var(--font-roboto);
   font-weight: 500;
 }
@@ -68,7 +73,7 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #19376d;
+  background: #5a7bba;
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
@@ -106,7 +111,9 @@
     align-items: center;
     gap: 34px;
   }
-
+  .title{
+    margin-top: -90px;
+  }
   .skills {
     width: 100%;
     flex-direction: row;
