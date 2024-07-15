@@ -2,9 +2,11 @@
 
 .container {
   display: flex;
+  
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  background-color: rgb(25, 60, 95);
+  /* background: linear-gradient(180deg, #576cbc 0%, #132a53 100%); */
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
@@ -17,11 +19,12 @@
 .title {
   font-size: 25px;
   font-weight: 700;
+  color: rgb(83, 209, 212);
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -50,12 +53,14 @@
   justify-content: space-around;
 }
 
+
+
 .link {
   text-decoration: none;
-  color: var(--color-text);
+  color: rgb(24, 55, 86);
   font-size: 30px;
   font-weight: 600;
   border-radius: 100px;
-  background: var(--color-primary);
+  background: rgb(46, 104, 163);
   padding: 1px 22px;
 }
