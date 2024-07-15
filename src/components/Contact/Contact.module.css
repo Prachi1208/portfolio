@@ -3,8 +3,7 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background-color: var(--color-secondary);
-  display: flex;
+  background-color: rgb(15, 23, 42);
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
@@ -20,6 +19,7 @@
 }
 
 .text p {
+  color: rgb(83, 209, 212);
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.125rem;
@@ -27,6 +27,8 @@
 }
 
 .links {
+  margin-left: 300px;
+  margin-right: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,6 +43,7 @@
 }
 
 .link img {
+  display: flex;
   max-width: 2rem;
   height: auto;
 }
@@ -51,6 +54,129 @@
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.09375rem;
+}
+
+.messageForm {
+  background-color: rgb(24, 55, 86); /* Light whitish-transparent */
+  backdrop-filter: blur(10px); /* Blurring the background for a matte effect */
+  padding: 2rem;
+  border-radius: 8px;
+  text-shadow: 20px;
+  /* box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.1); */
+  margin: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.messageForm input{
+  /* border-radius: 3%; */
+}
+.butt{
+  color: blue;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  background-color:rgb(23, 74, 132);
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color:rgb(23, 74, 132) ;
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+button:active {
+  background-color: blue;
+  transform: translateY(0); /* Return to original position when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on click */
+}
+
+button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); /* Add custom focus ring */
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(83, 209, 212);
+  color: rgb(131, 32, 32);
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.submitButton:hover {
+  background-color: var(--color-accent-dark); /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.submitButton:active {
+  background-color: var(--color-accent-dark);
+  transform: translateY(0); /* Return to original position when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on click */
+}
+
+
+.messageForm h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: rgba(73, 127, 170, 0.6);
+  
+  border: none;
+  outline: none;
+  /* text-underline-offset: 1px; */
+  /* background-color: blue; */
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: var(--color-accent-dark);
 }
 
 @media screen and (max-width: 830px) {
@@ -66,7 +192,8 @@
   }
 
   .links {
-    align-items: center;
+    /* align-items: center; */
+    margin: 50px;
   }
 
   .text h2 {
@@ -79,6 +206,22 @@
 
   .link a {
     font-size: 1.25rem;
+  }
+
+  .messageForm h3 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.125rem;
+  }
+
+  input {
+    font-size: 0.875rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
   }
 }
 
@@ -101,5 +244,21 @@
 
   .container {
     padding: 2rem 5%;
+  }
+
+  .messageForm h3 {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 0.75rem;
+  }
+
+  .submitButton {
+    font-size: 0.875rem;
   }
 }
