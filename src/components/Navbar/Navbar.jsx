@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        PN
       </a>
       <div className={styles.menu}>
         <img
@@ -16,7 +16,7 @@ export const Navbar = () => {
           src={
             menuOpen
               ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
+              : getImageUrl("nav/menuo.png")
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
