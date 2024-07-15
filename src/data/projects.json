@@ -19,7 +19,7 @@
   {
     "title": "Website for an architectural firm",
     "imageSrc": "projects/three.png",
-    "description": "Developed a professional website for an architectural firm.showcasing portfolio projects with high-quality visuals and intuitive navigation.",
+    "description": "Developed a professional website for an architectural firm.showcasing portfolio projects with high-quality visuals.",
     "skills": ["HTML", "CSS", "React"],
     "source": "assets/projects/project3.html"
     
