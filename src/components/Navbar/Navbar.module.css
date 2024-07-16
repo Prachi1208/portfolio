@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
 
 .navbar {
   position: fixed;
@@ -9,17 +10,28 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 10%;
-  /* border-radius: 40px; */
-  /* background: rgba(0, 0, 50, 0.7); */
   background-color: rgb(24, 55, 86); 
   color: aquamarine;
 }
 
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 10px;
+  max-width: 100px; /* Adjust the size of the logo as needed */
+}
+
 .title {
-  font-size: 30px;
+  margin-top: 10%; /* Adjusted margin-top to move the title down */
+  max-width: min-content;
+  font-size: 12px; /* Adjusted font size */
   font-weight: 600;
   text-decoration: none;
-  color: rgb(83, 209, 212);
+  color: rgb(3, 17, 18);
 }
 
 .menuBtn {
@@ -28,7 +40,6 @@
   margin-bottom: 10px;
   margin-top: 10px;
   color: rgb(83, 209, 212);
-  /* background-color: rgb(83, 209, 212); */
 }
 
 .menu {
@@ -46,6 +57,11 @@
   font-size: 25px;
   color: rgb(83, 209, 212);
   text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.menuItems a:hover {
+  color: rgb(255, 255, 255); /* Change color on hover */
 }
 
 @media screen and (max-width: 830px) {
@@ -57,7 +73,7 @@
   .menu {
     position: absolute;
     right: 14px;
-    top: 20px; /* Adjust this based on your navbar height */
+    top: 20px;
     flex-direction: column;
     align-items: flex-end;
     gap: 11px;
@@ -71,21 +87,12 @@
 
   .menuItems {
     display: none;
-    color: blue;
     flex-direction: column;
     align-items: center;
     gap: 23px;
-    border: 2px black;
-    /* border-radius: 10px; */
-    background:rgb(24, 55, 86);
-    /* background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    ); */
+    background: rgb(24, 55, 86);
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-
   }
 
   .menuOpen {
@@ -98,8 +105,7 @@
     position: fixed;
   }
 
-  .menuOpen .menuItems{
+  .menuOpen .menuItems {
     transform: translateY(2s);
-    /* color: blue; */
   }
 }
