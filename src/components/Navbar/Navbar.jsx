@@ -7,9 +7,12 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        PN
-      </a>
+      <div className={styles.logoContainer}>
+        <a href="/">
+          <img className={styles.logo} src={getImageUrl("nav/abc.png")} alt="prachi" />
+          {/* <span className={styles.logoText}>PN</span> */}
+        </a>
+      </div>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
