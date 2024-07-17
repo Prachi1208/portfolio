@@ -43,6 +43,7 @@
   font-family: roboto;
   margin-bottom: 52px;
   color: rgb(180, 180, 180); /* Gray color */
+  max-width: 500px;
 }
 
 .contactBtn {
